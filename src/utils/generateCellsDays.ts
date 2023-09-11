@@ -3,7 +3,7 @@ import dayjs from "dayjs";
 const MINUMUM_SIZE = 5 * 18;
 
 export function generateCellsDays() {
-  const firstDay = dayjs().startOf("year");
+  const firstDay = dayjs().startOf('month');
   const today = new Date();
 
   const dates = [];
