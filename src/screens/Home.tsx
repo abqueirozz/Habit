@@ -27,9 +27,7 @@ export function Home() {
     async function fecthSummary() {
         setIsLoading(true)
         try {
-            const { data } = await api.get('summary')
-           // const data = JSON.parse(await store.get(keys.HABITS))
-            setSummary(data)
+       
 
         } catch (error) {
             Alert.alert('Error', "Deu ruim")
