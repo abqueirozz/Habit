@@ -8,6 +8,7 @@ import { useCallback, useState } from "react";
 import Loading from "../components/Loading";
 import dayjs from "dayjs";
 import { store, keys} from "../lib/store";
+import { BottomSheet } from "../components/BottomSheet";
 
 const week_days = ['D', 'S', 'T', 'Q', 'Q', 'S', 'S']
 const { complementDays, dates } = generateCellsDays()
@@ -81,6 +82,7 @@ export function Home() {
                 }
 
             </ScrollView>
+            <BottomSheet />
         </View>
     )
 }
